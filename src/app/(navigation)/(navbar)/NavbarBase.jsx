@@ -7,7 +7,6 @@ import Link from "next/link";
 
 import { motion, useScroll } from "framer-motion";
 import Navbar from "./Navbar";
-import Nav from "./Nav";
 
 export default function NavbarBase() {
 	const __dirName = `/assets/img`;
@@ -78,7 +77,6 @@ export default function NavbarBase() {
 				</Link>
 				<div className="flex flex-col justify-end w-full">
 					<Navbar hidden={hidden} />
-					{/* <Nav /> */}
 				</div>
 			</div>
 		</motion.nav>
