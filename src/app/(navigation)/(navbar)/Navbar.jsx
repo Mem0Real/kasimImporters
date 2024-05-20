@@ -78,7 +78,7 @@ export default function Navbar({ hidden }) {
 		},
 	};
 	return (
-		<div ref={menuRef} className="w-full">
+		<div ref={menuRef} className="w-full ">
 			<div className="hidden md:flex justify-between items-center">
 				{/* Buttons */}
 				<div className="flex justify-end items-center gap-2 md:pr-10 w-full">
@@ -150,7 +150,7 @@ export default function Navbar({ hidden }) {
 				<button
 					name="menu"
 					onClick={() => setIsOpen(!isOpen)}
-					className="flex items-center py-2 rounded text-black-500 hover:text-black-400 z-50 absolute -top-9"
+					className="flex items-center py-2 rounded text-black-500 hover:text-black-400 z-50 absolute -top-12"
 				>
 					<svg
 						className={`fill-current h-5 w-5 ${isOpen ? "hidden" : "block"}`}
@@ -173,7 +173,7 @@ export default function Navbar({ hidden }) {
 			<AnimatePresence>
 				{isOpen && (
 					<motion.div
-						className={`w-full flex-grow lg:flex lg:items-center lg:w-auto z-40 bg-neutral-800 backdrop-blur-3xl -mt-1`}
+						className={`w-full overflow-y-hidden flex-grow lg:flex lg:items-center lg:w-auto z-40 bg-neutral-800 backdrop-blur-3xl -mt-1 pb-8 md:pb-0`}
 						initial="close"
 						animate={isOpen ? "open" : "close"}
 						exit="close"

@@ -41,10 +41,10 @@ export default function NavbarBase() {
 			}}
 			className={`fixed w-full h-16 bg-neutral-800 z-30`}
 		>
-			<div className="relative md:flex justify-between items-center gap-3 w-full text-sm md:pl-5 top-2">
+			<div className="relative md:flex justify-between md:justify-normal items-center gap-3 w-full text-sm md:pl-5">
 				<Link
 					href="/"
-					className="flex gap-2 justify-start items-center pl-5 md:pl-0"
+					className="flex gap-2 justify-start items-center pl-5 md:pl-0 pt-3 md:pt-2.5"
 				>
 					<svg
 						width="40px"
@@ -75,7 +75,7 @@ export default function NavbarBase() {
 						<span className="text-lg font-bold text-neutral-300">Imports</span>
 					</div>
 				</Link>
-				<div className="flex flex-col justify-end w-full">
+				<div className="flex flex-col justify-end w-full pt-3">
 					<Navbar hidden={hidden} />
 				</div>
 			</div>
