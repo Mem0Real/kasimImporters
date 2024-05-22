@@ -1,9 +1,16 @@
-import { Inter } from "next/font/google";
+// import '@fortawesome/free-solid-svg-icons'
+import "@fortawesome/fontawesome-svg-core/styles.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+
+config.autoAddCss = false;
+
+import { Inter, Roboto } from "next/font/google";
 import "./globals.css";
 import NavbarBase from "./(navigation)/(navbar)/NavbarBase";
 import Footer from "./(navigation)/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
+const roboto = Roboto({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata = {
 	title: "KasimImports",
@@ -13,9 +20,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
-			<body>
+			<body className="bg-neutral-800">
 				<NavbarBase />
-				{children}
+				<div className={roboto.className}>{children}</div>
 				<Footer />
 			</body>
 		</html>

@@ -39,7 +39,7 @@ export default function NavbarBase() {
 				ease: [0.1, 0.25, 0.3, 1],
 				duration: 0.6,
 			}}
-			className={`fixed w-full h-16 bg-neutral-800 z-30`}
+			className={`fixed w-full h-16 navbar bg-neutral-800 z-30 `}
 		>
 			<div className="relative md:flex justify-between md:justify-normal items-center gap-3 w-full text-sm md:pl-5">
 				<Link
