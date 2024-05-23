@@ -18,7 +18,7 @@ export default function Contact() {
 				background: 'url("/assets/img/background.jpg") center/cover',
 			}}
 		>
-			<div className="w-72 h-full flex flex-col justify-evenly items-center gap-y-2 border border-neutral-300 rounded-lg bg-black/60 backdrop-blur-sm">
+			<div className="w-[310px] h-full py-5 flex flex-col justify-evenly items-center gap-y-2 border border-neutral-300 rounded-lg bg-black/60 backdrop-blur-sm">
 				{/* Map */}
 				{/* <iframe
 					width={300}
