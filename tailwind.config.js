@@ -14,6 +14,7 @@ module.exports = {
 			},
 			colors: {
 				lemon: "#93cb52",
+				darkLemon: "#7ab436",
 			},
 			backgroundPosition: {
 				"top-4": "center top 1rem",

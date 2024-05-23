@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faUniversity,
@@ -5,24 +7,45 @@ import {
 	faPencilAlt,
 } from "@fortawesome/free-solid-svg-icons";
 
-import Image from "next/image";
 import ImageDispenser from "./components/ImageDispenser";
 
 export default function Home() {
 	const __dirName = "/assets/img";
 
 	return (
-		<div className="pt-[4em]">
+		<div className="min-h-screen w-full bg-white pt-[4em]">
 			{/* Hero */}
-			<header id="showcase">
-				<div className="showcase-content">
-					<h1 className="l-heading font-bold text-7xl">
-						<span className="text-primary">Kasim Kemal</span> General Imports
+
+			<header
+				id="showcase"
+				className="min-h-screen w-full flex flex-col bg-no-repeat bg-center"
+				style={{
+					background: 'url("/assets/img/background.jpg") center/cover',
+				}}
+			>
+				<div className=" bg-black/60 h-screen z-10 flex flex-col justify-center items-center gap-4 md:gap-6 text-neutral-200">
+					{/* <div className="showcase-content"> */}
+					<h1
+						className="font-bold text-6xl md:text-5xl lg:text-7xl flex flex-col items-center gap-3"
+						style={{ lineHeight: 1.1 }}
+					>
+						<div className="text-lemon text-center self-center">
+							Kasim Kemal <br />
+							{/* <span className="text-4xl italic font-semibold"> */}
+							<span className="text-neutral-200 text-center">
+								General Imports
+							</span>
+						</div>
+
+						{/* </span> */}
 					</h1>
-					<p className="lead">
+					<p className="text-lg md:text-2xl font-black text-center">
 						LEADING POWER GENERATOR AND INDUSTRY MACHINE SUPPLY
 					</p>
-					<a href="#what" className="btn">
+					<a
+						href="#what"
+						className=" inline-block bg-lemon px-4 py-2 border-none rounded-md hover:bg-darkLemon"
+					>
 						Read More
 					</a>
 				</div>
@@ -32,14 +55,18 @@ export default function Home() {
 			<section id="what" className="py-12 bg-light flex flex-col h-full gap-3">
 				<div className="container">
 					<h2 className="m-heading text-center py-5">
-						<span className="text-primary">What</span> We Do
+						<div className="text-4xl font-semibold">
+							<span className="text-lemon">What </span>
+							<span className="text-neutral-800">We Do</span>
+						</div>
 					</h2>
-					<div className="flex justify-center items-center">
-						<div className="basis-1/3 flex justify-evenly items-center min-h-72 gap-4 px-3">
-							<span className="icon">
-								<FontAwesomeIcon icon={faUniversity} size="2x" />{" "}
+					{/* <div className="flex flex-col lg:flex-row justify-center items-center gap-2 py-2"> */}
+					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-3 md:gap-y-5 lg:gap-y-12">
+						<div className="flex justify-start items-start gap-4 px-3">
+							<span className="icon self-center md:-mt-32 lg:-mt-24 bg-darkLemon rounded-full p-3">
+								<FontAwesomeIcon icon={faUniversity} size="2x" />
 							</span>
-							<div className="min-h-64 w-48">
+							<div className=" flex flex-col justify-start items-start">
 								<h3 className="py-2 font-bold text-lg">Mission</h3>
 								<p>
 									To give A to Z solution for product's and projects we execute.
@@ -48,11 +75,11 @@ export default function Home() {
 								</p>
 							</div>
 						</div>
-						<div className="basis-1/3 flex justify-evenly items-center min-h-72 gap-4 px-3">
-							<span className="icon">
+						<div className="flex justify-start items-start gap-4 px-3">
+							<span className="icon self-center md:-mt-32 lg:-mt-24 bg-darkLemon rounded-full p-3">
 								<FontAwesomeIcon icon={faBookReader} size="2x" />
 							</span>
-							<div className="min-h-64 w-48">
+							<div className="">
 								<h3 className="py-2 font-bold text-lg">Vision</h3>
 								<p>
 									We are dedicated to be a dependable and reliable Power
@@ -62,11 +89,11 @@ export default function Home() {
 								</p>
 							</div>
 						</div>
-						<div className="basis-1/3 flex justify-evenly items-center min-h-72 gap-4 px-3">
-							<span className="icon">
+						<div className="flex justify-start items-start gap-4 px-3">
+							<span className="icon self-center md:-mt-32 lg:-mt-24 bg-darkLemon rounded-full p-3">
 								<FontAwesomeIcon icon={faPencilAlt} size="2x" />
 							</span>
-							<div className="min-h-64 w-48">
+							<div className="">
 								<h3 className="py-2 font-bold text-lg">Core-values</h3>
 								<p>
 									- customers Satisfaction <br />
@@ -81,9 +108,9 @@ export default function Home() {
 			</section>
 
 			{/* Who We Are */}
-			<section className="bg-neutral-800 h-[90vh] w-full flex justify-between items-start">
+			<section className="bg-neutral-800 min-h-[90vh] w-full flex flex-col md:flex-row justify-between items-start">
 				<div className="basis-1/2 w-full">
-					<div className="relative w-[50vw] h-[90vh]">
+					<div className="relative w-[100vw] md:w-[50vw] h-[90vh]">
 						<Image
 							src={`${__dirName}/Banner.jpg`}
 							fill
@@ -132,7 +159,7 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<section className="w-full h-full pt-8 bg-white space-y-16 ">
+			<section className="w-full h-fit pt-2 pb-16 lg:py-8 bg-white md:lg:space-y-8 lg:space-y-16 ">
 				<div className="flex flex-col justify-center items-center pb-16 pt-5">
 					<div className="text-4xl font-semibold">
 						<span className="text-lemon">Our </span>
@@ -140,7 +167,7 @@ export default function Home() {
 					</div>
 				</div>
 
-				<div className="grid grid-rows-3 grid-cols-3 gap-x-12 gap-y-24 justify-items-center">
+				<div className="grid grid-rows-2 grid-cols-3 gap-x-12 gap-y-24 lg:gap-y-56 justify-items-center">
 					<ImageDispenser imageName="1" />
 					<ImageDispenser imageName="2" />
 					<ImageDispenser imageName="3" />
@@ -150,13 +177,13 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section className="w-full min-h-screen bg-white">
+			<section className="w-full bg-stone-700  py-20 lg:py-12">
 				<div className="w-full flex flex-col justify-center items-center gap-12">
 					<div className="text-4xl font-semibold">
-						<span className="text-neutral-800">Why Choose </span>
+						<span className="text-neutral-200">Why Choose </span>
 						<span className="text-lemon">Us?</span>
 					</div>
-					<div className="w-full grid grid-cols-3 gap-12 justify-items-center">
+					<div className="w-full flex justify-evenly items-center">
 						<ImageDispenser imageName="1" icons title="Hard Working" />
 						<ImageDispenser imageName="2" icons title="Professional" />
 						<ImageDispenser imageName="3" icons title="Organized" />
