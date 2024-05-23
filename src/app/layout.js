@@ -10,7 +10,7 @@ import NavbarBase from "./(navigation)/(navbar)/NavbarBase";
 import Footer from "./(navigation)/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
-const roboto = Roboto({ subsets: ["latin"], weight: ["400"] });
+const roboto = Roboto({ subsets: ["latin"], weight: ["100", "300", "400"] });
 
 export const metadata = {
 	title: "KasimImports",
