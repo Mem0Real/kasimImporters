@@ -12,19 +12,23 @@ export default function About() {
 					background: 'url("/assets/img/about-bg.jpg") no-repeat center/cover',
 				}}
 			>
-				<div className="bg-gray-700/40 w-full h-[75vh] px-36 ">
-					<div className="w-[70vw] flex flex-col gap-3 justify-center items-start text-white bg-black-40 pt-12 pb-6 pl-2">
-						<h4 className="bg-[#F89400] p-1.5 px-2 text-xs rounded-xl">READ</h4>
-						<h2 className="font-black text-3xl">About-Us</h2>
-						<p className="text-xl w-[35vw]">
-							We are a dedicated team of importers, committed to sourcing
-							high-quality products from around the world. With years of
-							experience we strive to provide our customers with the best
-							products and exceptional service.
-						</p>
-						<button className="px-5 py-2 bg-red-600 rounded-lg font-light">
-							Read More
-						</button>
+				<div className="bg-gray-700/40 w-full h-[75vh] flex justify-center items-center">
+					<div className="max-w-[1100px] h-[60vh] flex justify-start items-center">
+						<div className="w-1/2 flex flex-col gap-3 justify-center items-start text-neutral-200">
+							<h4 className="bg-[#F89400] p-1.5 px-2 text-xs rounded-xl">
+								READ
+							</h4>
+							<h2 className="font-black text-3xl">About-Us</h2>
+							<p className="text-xl">
+								We are a dedicated team of importers, committed to sourcing
+								high-quality products from around the world. With years of
+								experience we strive to provide our customers with the best
+								products and exceptional service.
+							</p>
+							<button className="px-5 py-2 bg-red-600 rounded-lg font-light">
+								Read More
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
