@@ -108,7 +108,7 @@ export default function Home() {
 			{/* Who We Are */}
 			<section
 				id="whoWeAre"
-				className="bg-neutral-800 min-h-[90vh] w-full flex flex-col md:flex-row justify-between items-start"
+				className="bg-neutral-800 min-h-[90vh] w-full flex flex-col md:flex-row justify-between items-start pt-8"
 			>
 				<div className="basis-1/4 md:basis-1/2 w-full my-auto">
 					<div className="relative w-[100vw] md:w-[50vw] h-[35vh] md:h-[50vh] lg:h-[90vh]">
