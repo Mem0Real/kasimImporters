@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 const roboto = Roboto({ subsets: ["latin"], weight: ["100", "300", "400"] });
 
 export const metadata = {
-	title: "KasimImports",
+	title: "Kasim General Imports",
 	description: "Importing products across the globe.",
 };
 
