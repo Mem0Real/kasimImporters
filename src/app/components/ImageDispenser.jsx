@@ -20,11 +20,23 @@ export default function ImageDispenser({
 	return (
 		<>
 			<motion.div
-				className="relative size-16 md:size-24 lg:size-44 max-w-full flex flex-col justify-end items-center"
+				className="relative size-16 md:size-24 lg:size-44 max-w-full flex flex-col justify-start items-center cursor-pointer"
 				whileHover={{ scale: 0.9 }}
 				onHoverStart={() => setHovering(imageName)}
 				onHoverEnd={() => setHovering(0)}
 			>
+				{icons && (
+					<motion.div
+						initial={{ opacity: 0, x: 0 }}
+						animate={
+							hovering && { x: -80, opacity: 1, transition: { duration: 0.5 } }
+						}
+						exit={{ x: 0 }}
+						className="text-neutral-800 text-center rounded-lg text-lg font-medium bg-lemon/70 backdrop-blur-lg px-3 py-4"
+					>
+						{title}
+					</motion.div>
+				)}
 				<Image
 					src={`${__dirName}${imageName}${icons ? ".png" : ".jpg"}`}
 					fill
@@ -34,19 +46,6 @@ export default function ImageDispenser({
 					}`}
 					sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 				></Image>
-
-				{icons && (
-					<motion.div
-						initial={{ opacity: 0, y: 0 }}
-						animate={
-							hovering && { y: 70, opacity: 1, transition: { duration: 0.5 } }
-						}
-						exit={{ y: 0 }}
-						className="md:mt-36 md:w-56 text-center rounded-lg text-2xl bg-lemon/70 backdrop-blur-lg py-4 italic"
-					>
-						{title}
-					</motion.div>
-				)}
 			</motion.div>
 		</>
 	);

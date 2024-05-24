@@ -24,14 +24,12 @@ export default function Home() {
 				}}
 			>
 				<div className=" bg-black/60 h-screen z-10 flex flex-col justify-center items-center gap-4 md:gap-6 text-neutral-200">
-					{/* <div className="showcase-content"> */}
 					<h1
 						className="font-bold text-6xl md:text-5xl lg:text-7xl flex flex-col items-center gap-3"
 						style={{ lineHeight: 1.1 }}
 					>
 						<div className="text-lemon text-center self-center">
 							Kasim Kemal <br />
-							{/* <span className="text-4xl italic font-semibold"> */}
 							<span className="text-neutral-200 text-center">
 								General Imports
 							</span>
@@ -52,7 +50,10 @@ export default function Home() {
 			</header>
 
 			{/* What We Do */}
-			<section id="what" className="py-12 bg-light flex flex-col h-full gap-3">
+			<section
+				id="what"
+				className="py-12 bg-light flex flex-col justify-center items-center h-full gap-3 xl:gap-6"
+			>
 				<div className="container">
 					<h2 className="m-heading text-center py-5">
 						<div className="text-4xl font-semibold">
@@ -60,7 +61,6 @@ export default function Home() {
 							<span className="text-neutral-800">We Do</span>
 						</div>
 					</h2>
-					{/* <div className="flex flex-col lg:flex-row justify-center items-center gap-2 py-2"> */}
 					<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-3 md:gap-y-5 lg:gap-y-12">
 						<div className="flex justify-start items-start gap-4 px-3">
 							<span className="icon self-center md:-mt-32 lg:-mt-24 bg-darkLemon rounded-full p-3">
