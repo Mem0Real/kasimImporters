@@ -62,11 +62,9 @@ export default function About() {
 											</h2>
 										</div>
 										<div>
-											<p className="text-base text-neutral-800">
-												Our mission is to bring the finest products from around
-												the world to our customers, ensuring their satisfaction
-												and delight.
-											</p>
+											<h2 className="text-lg font-black text-neutral-800">
+												PROVIDING
+											</h2>
 										</div>
 									</div>
 								</div>
@@ -184,6 +182,40 @@ export default function About() {
 								</div>
 							</div>
 
+							{/* <div className="h-[26em] lg:w-[35%] px-5 py-4 w-full flex flex-col gap-3 items-center bg-white">
+								<div className="basis-1/2 flex flex-col gap-2 justify-center items-start">
+									<div className="basis-1/2 flex flex-col gap-2 justify-center items-start">
+										<div>
+											<p className="bg-purple-500 rounded-full text-[10px] p-2 text-neutral-200">
+												RELATIONS
+											</p>
+										</div>
+										<div>
+											<h2 className="text-lg font-black text-neutral-800">
+												FAMILIAR SERVICES
+											</h2>
+										</div>
+										<div>
+											<p className="text-base text-neutral-800">
+												We believe in building long-term relationships with our
+												customers. Through personalized communication and
+												attentive customer support, we aim to create a loyal
+												customer base that trusts and relies on us for their
+												import needs.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div className="basis-1/2 py-4 pr-3 w-[100%] h-[100%] lg:size-64 relative">
+									<Image
+										src={`${__dirName}/3.jpg`}
+										fill
+										alt="satisfaction"
+										className="absolute object-cover object-center"
+										sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+									/>
+								</div>
+							</div> */}
 							{/* <div className="flex w-full lg:pl-16 lg:pr-3">
 								<div className="hidden md:flex basis-1/3"></div>
 								<div className="w-full h-64 basis-1/2 flex bg-white">
