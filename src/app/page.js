@@ -110,18 +110,18 @@ export default function Home() {
 				id="whoWeAre"
 				className="bg-neutral-800 min-h-[90vh] w-full flex flex-col md:flex-row justify-between items-start"
 			>
-				<div className="basis-1/2 w-full">
-					<div className="relative w-[100vw] md:w-[50vw] h-[90vh]">
+				<div className="basis-1/4 md:basis-1/2 w-full my-auto">
+					<div className="relative w-[100vw] md:w-[50vw] h-[35vh] md:h-[50vh] lg:h-[90vh]">
 						<Image
 							src={`${__dirName}/Banner.webp`}
 							fill
 							alt="banner"
-							className="absolute object-cover object-center"
+							className="absolute object-contain md:object-fill lg:object-cover object-center"
 							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 						/>
 					</div>
 				</div>
-				<div className="basis-1/2 w-full p-5">
+				<div className="basis-3/4 md:basis-1/2 w-full p-5">
 					<div className="flex flex-col justify-center items-start p-3 gap-4">
 						<div className="text-4xl font-semibold">
 							<span className="text-lemon">Who </span>
