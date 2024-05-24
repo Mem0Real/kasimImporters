@@ -63,7 +63,7 @@ export default function CarouselDispenser({ id }) {
 				>
 					<Image
 						fill
-						src={`${__dirName}/${id}/${item}.jpg`}
+						src={`${__dirName}/${id}/${item}.webp`}
 						sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 						alt={item}
 						className="object-contain object-center absolute"

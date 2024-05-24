@@ -78,7 +78,7 @@ export default function Navbar({ hidden }) {
 		},
 	};
 	return (
-		<div ref={menuRef} className="w-full ">
+		<div ref={menuRef} className="w-full">
 			<div className="hidden md:flex justify-between items-center">
 				{/* Buttons */}
 				<div className="flex justify-end items-center gap-2 md:pr-10 w-full">

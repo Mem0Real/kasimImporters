@@ -20,7 +20,7 @@ export default function ImageDispenser({
 	return (
 		<>
 			<motion.div
-				className="relative size-16 md:size-24 lg:size-44 max-w-full flex flex-col justify-start items-center cursor-pointer"
+				className="relative size-16 md:size-24 lg:size-28 max-w-full flex flex-col justify-start items-center cursor-pointer"
 				whileHover={{ scale: 0.9 }}
 				onHoverStart={() => setHovering(imageName)}
 				onHoverEnd={() => setHovering(0)}
@@ -38,7 +38,7 @@ export default function ImageDispenser({
 					</motion.div>
 				)}
 				<Image
-					src={`${__dirName}${imageName}${icons ? ".png" : ".jpg"}`}
+					src={`${__dirName}${imageName}.webp`}
 					fill
 					alt={imageName}
 					className={`absolute object-cover object-center rounded-full ${

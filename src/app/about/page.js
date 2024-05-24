@@ -8,7 +8,7 @@ export default function About() {
 			<div
 				className="h-[75vh] w-full flex flex-col justify-center items-start bg-center"
 				style={{
-					background: 'url("/assets/img/about-bg.jpg") no-repeat center/cover',
+					background: 'url("/assets/img/about-bg.webp") no-repeat center/cover',
 				}}
 			>
 				<div className="bg-stone-700/50 w-full min-h-[75vh] flex justify-center items-center">
@@ -40,7 +40,7 @@ export default function About() {
 						{/* Image */}
 						<div className="h-[15em] md:h-[20em] lg:h-[100%] xl:h-full w-[100%] relative">
 							<Image
-								src={`${__dirName}/1.jpg`}
+								src={`${__dirName}/1.webp`}
 								fill
 								alt="satisfaction"
 								className="absolute object-contain object-center"
@@ -110,7 +110,7 @@ export default function About() {
 						{/* Image */}
 						<div className="row-span-5 h-[15em] md:h-[20em] lg:h-[100%] xl:h-full w-[100%] relative">
 							<Image
-								src={`${__dirName}/2.jpg`}
+								src={`${__dirName}/2.webp`}
 								fill
 								alt="satisfaction"
 								className="absolute object-cover object-center"
@@ -122,7 +122,7 @@ export default function About() {
 						{/* Image */}
 						<div className="row-span-5 h-[15em] md:h-[20em] lg:h-[100%] xl:h-full w-[100%] relative">
 							<Image
-								src={`${__dirName}/4.jpg`}
+								src={`${__dirName}/4.webp`}
 								fill
 								alt="satisfaction"
 								className="absolute object-cover object-center"
@@ -194,7 +194,7 @@ export default function About() {
 						{/* Image */}
 						<div className="h-[15em] md:h-[20em] lg:h-[100%] xl:h-full w-[100%] relative">
 							<Image
-								src={`${__dirName}/3.jpg`}
+								src={`${__dirName}/3.webp`}
 								fill
 								alt="satisfaction"
 								className="absolute object-contain object-center"

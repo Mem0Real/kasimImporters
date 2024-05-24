@@ -20,7 +20,7 @@ export default function Home() {
 				id="showcase"
 				className="min-h-screen w-full flex flex-col bg-no-repeat bg-center"
 				style={{
-					background: 'url("/assets/img/background.jpg") center/cover',
+					background: 'url("/assets/img/background.webp") center/cover',
 				}}
 			>
 				<div className=" bg-black/60 h-screen z-10 flex flex-col justify-center items-center gap-4 md:gap-6 text-neutral-200">
@@ -34,8 +34,6 @@ export default function Home() {
 								General Imports
 							</span>
 						</div>
-
-						{/* </span> */}
 					</h1>
 					<p className="text-lg md:text-2xl font-black text-center">
 						LEADING POWER GENERATOR AND INDUSTRY MACHINE SUPPLY
@@ -112,7 +110,7 @@ export default function Home() {
 				<div className="basis-1/2 w-full">
 					<div className="relative w-[100vw] md:w-[50vw] h-[90vh]">
 						<Image
-							src={`${__dirName}/Banner.jpg`}
+							src={`${__dirName}/Banner.webp`}
 							fill
 							alt="banner"
 							className="absolute object-cover object-center"
@@ -159,15 +157,17 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
+
+			{/* Our clients */}
 			<section className="w-full h-fit pt-2 pb-16 lg:py-8 bg-white md:lg:space-y-8 lg:space-y-16 ">
-				<div className="flex flex-col justify-center items-center pb-16 pt-5">
+				<div className="w-full flex flex-col justify-center items-center pb-16 pt-5">
 					<div className="text-4xl font-semibold">
 						<span className="text-lemon">Our </span>
 						<span className="text-neutral-800">Clients</span>
 					</div>
 				</div>
 
-				<div className="grid grid-rows-2 grid-cols-3 gap-x-12 gap-y-24 lg:gap-y-56 justify-items-center">
+				<div className="w-full grid grid-rows-2 grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-24 lg:gap-y-36 justify-items-center">
 					<ImageDispenser imageName="1" />
 					<ImageDispenser imageName="2" />
 					<ImageDispenser imageName="3" />
@@ -177,7 +177,8 @@ export default function Home() {
 				</div>
 			</section>
 
-			<section className="w-full bg-stone-700  py-20 lg:py-12">
+			{/* Why Choose Us */}
+			<section className="w-full bg-stone-700 py-20 lg:py-12">
 				<div className="w-full flex flex-col justify-center items-center gap-12">
 					<div className="text-4xl font-semibold">
 						<span className="text-neutral-200">Why Choose </span>
