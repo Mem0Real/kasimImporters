@@ -31,11 +31,11 @@ export default function About() {
 					</div>
 				</div>
 			</div>
-			<div className="pt-8 space-t-2">
+			<div className="py-8 space-t-2">
 				<div className="mt-10 w-[80vw] md:w-[90vw] lg:w-[95vw] xl:w-[75vw] xl:max-w-[1100px] md:px-8 lg:px-2 text-2xl font-black text-neutral-800 mx-auto grid grid-cols-1">
 					Our Services
 				</div>
-				<div className="w-[80vw] md:w-[90vw] lg:w-[95vw] xl:w-[75vw] xl:max-w-[1100px] mx-auto grid grid-cols-1 grid-flow-col md:grid-flow-row md:grid-cols-2 lg:grid-cols-3 grid-rows-7 md:grid-rows-4 lg:grid-rows-3 md:gap-x-4 xl:gap-x-16 gap-y-6 md:gap-y-2 lg:gap-y-4 xl:pr-16 xl:gap-y-8">
+				<div className="w-[80vw] md:w-[90vw] lg:w-[95vw] xl:w-[75vw] xl:max-w-[1100px] mx-auto grid grid-flow-col md:grid-flow-row grid-cols-1 md:grid-cols-2 lg:grid-cols-3 grid-rows-6 md:grid-rows-4 lg:grid-rows-3 md:gap-x-4 xl:gap-x-16 gap-y-8 md:gap-y-2 lg:gap-y-4 xl:pr-16 xl:gap-y-8">
 					<div className="h-full px-2 md:px-4 lg:px-2 bg-white lg:col-span-2 grid grid-cols-1 lg:grid-cols-2 gap-4">
 						{/* Image */}
 						<div className="h-[15em] md:h-[20em] lg:h-[100%] xl:h-full w-[100%] relative">
