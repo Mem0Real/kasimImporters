@@ -12,10 +12,10 @@ export default function About() {
 					background: 'url("/assets/img/about-bg.jpg") no-repeat center/cover',
 				}}
 			>
-				<div className="bg-gray-700/40 w-full h-[75vh] flex justify-center items-center">
-					<div className="max-w-[1100px] h-[60vh] flex justify-start items-center">
-						<div className="w-1/2 flex flex-col gap-3 justify-center items-start text-neutral-200">
-							<h4 className="bg-[#F89400] p-1.5 px-2 text-xs rounded-xl">
+				<div className="bg-stone-700/50 w-full min-h-[75vh] flex justify-center items-center">
+					<div className="max-w-[90vw] xl:max-w-[1100px] flex justify-center md:justify-start items-center">
+						<div className="px-2 md:px-4 w-11/12 md:w-7/12 flex flex-col gap-3 justify-center items-start text-neutral-200">
+							<h4 className="hidden md:block bg-[#F89400] p-1.5 px-2 text-xs rounded-xl">
 								READ
 							</h4>
 							<h2 className="font-black text-3xl">About-Us</h2>
@@ -25,7 +25,7 @@ export default function About() {
 								experience we strive to provide our customers with the best
 								products and exceptional service.
 							</p>
-							<button className="px-5 py-2 bg-red-600 rounded-lg font-light">
+							<button className="hidden md:block px-5 py-2 bg-red-600 rounded-lg font-light">
 								Read More
 							</button>
 						</div>
@@ -33,15 +33,15 @@ export default function About() {
 				</div>
 			</div>
 			<div className="h-full w-full bg-neutral-300 flex flex-col justify-center items-center">
-				<div className="my-8 w-full px-4 xl:px-44 flex flex-col justify-center items-center">
-					<div className="px-8 flex flex-col justify-center items-center gap-2">
+				<div className="max-w-[90vw] xl:max-w-[1100px] flex flex-col justify-center items-center">
+					<div className="w-full md:px-4 flex flex-col justify-center items-center gap-5 md:gap-2">
 						<h1 className="w-full text-2xl font-black text-neutral-800">
 							Our Services
 						</h1>
-						<div className="w-full flex xl:gap-x-20 gap-y-6 flex-wrap">
-							<div className="h-96 basis-[60%] flex bg-white">
-								<div className="py-4 pr-3 w-full flex gap-1 items-center">
-									<div className="basis-1/2 size-80 relative">
+						<div className="w-full flex flex-col md:flex-row gap-x-6 xl:gap-x-20 gap-y-6">
+							<div className="basis-3/4 md:basis-1/2 lg:basis-3/4 min-h-[30em] md:min-h-[35em] lg:min-h-96 w-full flex bg-white">
+								<div className="w-full flex flex-col lg:flex-row gap-4 md:gap-1 items-center">
+									<div className="py-4 pr-3 basis-4/5 w-[100%] h-[100%] lg:size-80 relative">
 										<Image
 											src={`${__dirName}/1.jpg`}
 											fill
@@ -50,7 +50,7 @@ export default function About() {
 											sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 										/>
 									</div>
-									<div className="basis-1/2 flex flex-col gap-2 justify-center items-start">
+									<div className="px-4 py-2 w-full basis-1/2 flex flex-col gap-2 justify-center items-start">
 										<div>
 											<p className="bg-purple-500 rounded-full text-[10px] p-2 text-neutral-200">
 												SATISFACTION
@@ -72,7 +72,7 @@ export default function About() {
 								</div>
 							</div>
 
-							<div className="h-96 basis-1/4 flex bg-stone-800 text-neutral-200">
+							<div className="w-full min-h-96 basis-1/4 md:basis-1/2 lg:basis-1/4 flex bg-stone-800 text-neutral-200">
 								<div className="py-4 px-5 w-full flex justify-evenly items-start">
 									<div className="flex flex-col gap-4 justify-center items-start">
 										<div>
@@ -94,76 +94,75 @@ export default function About() {
 									</div>
 								</div>
 							</div>
-
-							<div className="h-96 basis-[60%] flex gap-16">
-								<div className="basis-1/2 flex gap-1 bg-white">
-									<div className="py-4 px-5 w-full flex flex-col gap-3 items-center">
-										<div className="basis-1/2 flex flex-col gap-2 justify-center items-start">
-											<div>
-												<p className="bg-yellow-500 rounded-full text-[10px] p-2 text-neutral-200">
-													EXPERIENCED
-												</p>
-											</div>
-											<div>
-												<h2 className="text-lg font-black text-neutral-800">
-													MANY SUPPLIERS
-												</h2>
-											</div>
-											<div>
-												<p className="text-base text-neutral-800">
-													With years of experience in the import industry, we
-													have developed strong relationships with reliable
-													suppliers, enabling us to consistently deliver
-													high-quality products to our customers.
-												</p>
-											</div>
+						</div>
+						<div className="w-full flex flex-col md:flex-row gap-x-6 lg:gap-x-7 xl:gap-x-20 gap-y-6">
+							<div className="h-[26em] lg:w-[35%] w-full flex gap-1 bg-white">
+								<div className="py-4 px-5 w-full flex flex-col gap-3 items-center">
+									<div className="basis-1/2 flex flex-col gap-2 justify-center items-start">
+										<div>
+											<p className="bg-yellow-500 rounded-full text-[10px] p-2 text-neutral-200">
+												EXPERIENCED
+											</p>
 										</div>
-										<div className="basis-1/2 h-80 w-72 relative">
-											<Image
-												src={`${__dirName}/2.jpg`}
-												fill
-												alt="satisfaction"
-												className="absolute object-cover object-center"
-												sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-											/>
+										<div>
+											<h2 className="text-lg font-black text-neutral-800">
+												MANY SUPPLIERS
+											</h2>
+										</div>
+										<div>
+											<p className="text-base text-neutral-800">
+												With years of experience in the import industry, we have
+												developed strong relationships with reliable suppliers,
+												enabling us to consistently deliver high-quality
+												products to our customers.
+											</p>
 										</div>
 									</div>
-								</div>
-								<div className="basis-1/2 flex flex-col bg-white">
-									<div className="basis-1/2 h-80 w-full relative">
+									<div className="py-4 pr-3 basis-4/5 w-[100%] h-[100%] lg:size-64 relative">
 										<Image
-											src={`${__dirName}/4.jpg`}
+											src={`${__dirName}/2.jpg`}
 											fill
 											alt="satisfaction"
 											className="absolute object-cover object-center"
 											sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 										/>
 									</div>
-									<div className="py-4 px-5 w-full flex flex-col gap-3 items-center">
-										<div className="basis-1/2 flex flex-col gap-2 justify-center items-start">
-											<div>
-												<p className="bg-blue-500 rounded-full text-[10px] p-2 text-neutral-200">
-													QUALTIY
-												</p>
-											</div>
-											<div>
-												<h2 className="text-lg font-black text-neutral-800">
-													CUSTOMER TRUST
-												</h2>
-											</div>
-											<div>
-												<p className="text-base text-neutral-800">
-													We understand the importance of quality control and
-													ensure that all products go through rigorous testing
-													and inspection before they reach our customers' hands.
-												</p>
-											</div>
+								</div>
+							</div>
+							<div className="h-[26em] lg:w-[35%] px-5 py-4 w-full flex flex-col gap-3 items-center bg-white">
+								<div className="basis-1/2 py-4 pr-3 w-[100%] h-[100%] lg:size-64 relative">
+									<Image
+										src={`${__dirName}/4.jpg`}
+										fill
+										alt="satisfaction"
+										className="absolute object-cover object-center"
+										sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+									/>
+								</div>
+								<div className="basis-1/2 flex flex-col gap-2 justify-center items-start">
+									<div className="basis-1/2 flex flex-col gap-2 justify-center items-start">
+										<div>
+											<p className="bg-blue-500 rounded-full text-[10px] p-2 text-neutral-200">
+												QUALITY
+											</p>
+										</div>
+										<div>
+											<h2 className="text-lg font-black text-neutral-800">
+												CUSTOMER TRUST
+											</h2>
+										</div>
+										<div>
+											<p className="text-base text-neutral-800">
+												We understand the importance of quality control and
+												ensure that all products go through rigorous testing and
+												inspection before they reach our customers' hands.
+											</p>
 										</div>
 									</div>
 								</div>
 							</div>
 
-							<div className="h-96 basis-1/4 flex bg-red-600 text-neutral-200">
+							<div className="w-full h-[26em] basis-1/4 flex bg-red-600 text-neutral-200">
 								<div className="py-4 px-5 w-full flex justify-evenly items-start">
 									<div className="flex flex-col gap-4 justify-center items-start">
 										<div>
@@ -185,10 +184,10 @@ export default function About() {
 								</div>
 							</div>
 
-							<div className="flex w-full pl-16 pr-3">
+							{/* <div className="flex w-full lg:pl-16 lg:pr-3">
 								<div className="hidden md:flex basis-1/3"></div>
-								<div className="h-64 basis-[60%] flex bg-white">
-									<div className="py-4 pl-5 w-full flex gap-3 justify-between items-center">
+								<div className="w-full h-64 basis-1/2 flex bg-white">
+									<div className="py-4 pl-5 w-full flex flex-col md:flex-row gap-3 justify-between items-center">
 										<div className="basis-1/2 flex flex-col gap-2 justify-center items-start">
 											<div>
 												<p className="bg-purple-500 rounded-full text-[10px] p-2 text-neutral-200">
@@ -221,7 +220,7 @@ export default function About() {
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> */}
 						</div>
 					</div>
 				</div>
