@@ -96,32 +96,7 @@ export default function Navbar({ hidden }) {
 								onMouseOver={() => setHoveredPath(item.path)}
 								onMouseLeave={() => setHoveredPath(pathname)}
 							>
-								{/* <motion.div
-									layoutId="button-bg"
-									whileHover={{
-										background: "transparent",
-										border: "1px solid #93CA53",
-									}}
-									whileTap={{ scale: 0.9 }}
-									className={`p-2 rounded-md w-20 text-center ${
-										path === href && "bg-lemon"
-									}`}
-								>
-									{path === href && (
-										<motion.span
-											layoutId="active-background"
-											className="absolute left-0 top-full block h-[2px] w-full bg-neutral-200 mt-0.5"
-										/>
-									)}
-									<span
-										initial={false}
-										key={href}
-										className="text-sm text-white"
-									>
-										{label}
-									</span>
-								</motion.div> */}
-								<span>{item.name}</span>
+								<span className="text-sm">{item.name}</span>
 								{item.path === hoveredPath && (
 									<motion.div
 										className="absolute bottom-0 left-0 h-full bg-lemon rounded-md -z-10"

@@ -8,10 +8,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 import ImageDispenser from "./components/ImageDispenser";
+import Link from "next/link";
 
 export default function Home() {
 	const __dirName = "/assets/img";
-
 	return (
 		<div className="min-h-screen w-full bg-white pt-[4em]">
 			{/* Hero */}
@@ -28,22 +28,22 @@ export default function Home() {
 						className="font-bold text-6xl md:text-5xl lg:text-7xl flex flex-col items-center gap-3"
 						style={{ lineHeight: 1.1 }}
 					>
-						<div className="text-lemon text-center self-center">
-							Kasim Kemal <br />
-							<span className="text-neutral-200 text-center">
+						<div className="text-lemon text-center self-center flex flex-col lg:flex-row justify-center items-center">
+							<span>Kasim Kemal</span>
+							<span className="text-neutral-200 text-center xl:ml-4">
 								General Imports
 							</span>
 						</div>
 					</h1>
-					<p className="text-lg md:text-2xl font-black text-center">
+					<p className="text-lg md:text-xl font-medium text-center">
 						LEADING POWER GENERATOR AND INDUSTRY MACHINE SUPPLY
 					</p>
-					<a
-						href="#what"
+					<Link
+						href="#whoWeAre"
 						className=" inline-block bg-lemon px-4 py-2 border-none rounded-md hover:bg-darkLemon"
 					>
 						Read More
-					</a>
+					</Link>
 				</div>
 			</header>
 
@@ -106,7 +106,10 @@ export default function Home() {
 			</section>
 
 			{/* Who We Are */}
-			<section className="bg-neutral-800 min-h-[90vh] w-full flex flex-col md:flex-row justify-between items-start">
+			<section
+				id="whoWeAre"
+				className="bg-neutral-800 min-h-[90vh] w-full flex flex-col md:flex-row justify-between items-start"
+			>
 				<div className="basis-1/2 w-full">
 					<div className="relative w-[100vw] md:w-[50vw] h-[90vh]">
 						<Image
