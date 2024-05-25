@@ -170,7 +170,7 @@ export default function Home() {
 					</div>
 				</div>
 
-				<div className="w-full grid grid-rows-2 grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-24 lg:gap-y-36 justify-items-center">
+				<div className="w-full grid grid-rows-2 grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-12 lg:gap-y-24 justify-items-center">
 					<ImageDispenser imageName="1" />
 					<ImageDispenser imageName="2" />
 					<ImageDispenser imageName="3" />
@@ -187,7 +187,7 @@ export default function Home() {
 						<span className="text-neutral-200">Why Choose </span>
 						<span className="text-lemon">Us?</span>
 					</div>
-					<div className="w-full flex justify-evenly items-center">
+					<div className="mt-12 w-full flex justify-evenly items-center">
 						<ImageDispenser imageName="1" icons title="Hard Working" />
 						<ImageDispenser imageName="2" icons title="Professional" />
 						<ImageDispenser imageName="3" icons title="Organized" />

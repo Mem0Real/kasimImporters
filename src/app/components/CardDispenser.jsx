@@ -36,10 +36,10 @@ export default function CardDispenser() {
 	}, []);
 
 	return (
-		<div className="w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 gap-y-24 lg:gap-y-36 place-items-center self-center">
+		<div className="w-full grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-5 gap-y-16 lg:gap-y-36 place-items-center self-center">
 			{items.map(({ id, title }) => (
 				<motion.div
-					className="w-64 md:w-[25rem] h-full flex flex-col justify-center items-center mx-auto bg-blue-400/50 rounded-xl shadow-lg shadow-black p-3 cursor-pointer"
+					className="w-[85vw] md:w-[75vw] lg:w-[25rem] xl:w-[25vw] h-full flex flex-col justify-center items-center mx-auto bg-blue-400/50 rounded-xl shadow-lg shadow-black p-3 cursor-pointer"
 					whileHover={{ scale: 1.05, transition: { duration: 0.5 } }}
 					id={id}
 				>
@@ -47,7 +47,7 @@ export default function CardDispenser() {
 						<CarouselDispenser id={id} />
 					</div>
 					{/* Titles */}
-					<h1 className="w-full p-5 text-base md:text-lg text-semibold text-neutral-200 bg-black/30 backdrop-blur-md text-center ps-4">
+					<h1 className="w-full p-5 text-base md:text-lg text-semibold text-neutral-200 bg-black/5 rounded-xl mt-4 backdrop-blur-md text-center ps-4">
 						{title}
 					</h1>
 				</motion.div>
