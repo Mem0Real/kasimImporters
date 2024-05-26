@@ -26,6 +26,7 @@ export default function Footer() {
 							src={`${__dirName}/Mem0Real.webp`}
 							alt="Mem0Real"
 							className="object-cover object-center"
+							sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
 						/>
 					</div>
 				</div>

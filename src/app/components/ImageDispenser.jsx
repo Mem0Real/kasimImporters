@@ -34,6 +34,7 @@ export default function ImageDispenser({
 
 		setTapArray([...tapArray.slice(0, index), ...tapArray.slice(index + 1)]);
 	};
+
 	return (
 		<>
 			<motion.div
@@ -43,19 +44,19 @@ export default function ImageDispenser({
 						: "size-24 md:size-48 lg:size-56"
 				} max-w-full flex flex-col justify-start items-center cursor-pointer`}
 				whileHover={{ scale: 0.9 }}
-				onHoverStart={() => setHovering(imageName)}
-				onHoverEnd={() => setHovering(0)}
-				// onTapStart={() => processTap(imageName)}
+				onHoverStart={() => addToTap(imageName)}
+				onHoverEnd={() => removeFromTap(imageName)}
 				onTap={() => processTap(imageName)}
 			>
 				{icons && (
 					<motion.div
 						initial={{ opacity: 0, x: 0, y: 0 }}
 						animate={
-							hovering ||
-							(tapArray && tapArray.includes(imageName)
+							hovering
 								? { y: -80, opacity: 1, transition: { duration: 0.5 } }
-								: { y: 20, opacity: 0, transition: { duration: 0.5 } })
+								: tapArray?.includes(imageName)
+								? { y: -80, opacity: 1, transition: { duration: 0.5 } }
+								: { y: 20, opacity: 0, transition: { duration: 0.5 } }
 						}
 						exit={{ x: 0, y: 0 }}
 						className="text-neutral-800 text-center rounded-lg text-lg font-medium bg-lemon/70 backdrop-blur-lg px-3 py-4 min-w-36"
