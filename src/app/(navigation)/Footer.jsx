@@ -20,7 +20,7 @@ export default function Footer() {
 					className={`flex justify-center items-center ${audioWide.className}`}
 				>
 					<span className="text-center"> Web Developed by: </span>
-					<div className="h-16 lg:h-24 xl:h-16 w-36 xl:w-44 relative">
+					<div className="h-16 lg:h-16 w-36 lg:w-24 relative">
 						<Image
 							fill
 							src={`${__dirName}/Mem0Real.webp`}

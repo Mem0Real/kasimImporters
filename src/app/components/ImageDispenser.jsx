@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
-import { AnimatePresence, animate, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function ImageDispenser({
 	imageName,
@@ -11,9 +11,8 @@ export default function ImageDispenser({
 }) {
 	const [hovering, setHovering] = useState(0);
 	const [tapArray, setTapArray] = useState([]);
-	const [text, showText] = useState("");
 
-	let __dirName, visibleText;
+	let __dirName;
 
 	icons
 		? (__dirName = "/assets/img/icons/")
@@ -35,19 +34,6 @@ export default function ImageDispenser({
 
 		setTapArray([...tapArray.slice(0, index), ...tapArray.slice(index + 1)]);
 	};
-
-	const visible = (image) => {
-		if (text === image) {
-			showText("");
-		} else {
-			showText(image);
-			console.log(text);
-		}
-	};
-
-	useEffect(() => {
-		visibleText = text;
-	}, []);
 
 	return (
 		<>
