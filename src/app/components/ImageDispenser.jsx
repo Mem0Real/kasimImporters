@@ -11,8 +11,9 @@ export default function ImageDispenser({
 }) {
 	const [hovering, setHovering] = useState(0);
 	const [tapArray, setTapArray] = useState([]);
+	const [text, showText] = useState("");
 
-	let __dirName;
+	let __dirName, visibleText;
 
 	icons
 		? (__dirName = "/assets/img/icons/")
@@ -35,6 +36,19 @@ export default function ImageDispenser({
 		setTapArray([...tapArray.slice(0, index), ...tapArray.slice(index + 1)]);
 	};
 
+	const visible = (image) => {
+		if (text === image) {
+			showText("");
+		} else {
+			showText(image);
+			console.log(text);
+		}
+	};
+
+	useEffect(() => {
+		visibleText = text;
+	}, []);
+
 	return (
 		<>
 			<motion.div
@@ -44,6 +58,9 @@ export default function ImageDispenser({
 						: "size-24 md:size-48 lg:size-56"
 				} max-w-full flex flex-col justify-start items-center cursor-pointer`}
 				whileHover={{ scale: 0.9 }}
+				// onHoverStart={() => addToTap(imageName)}
+				// onHoverEnd={() => removeFromTap(imageName)}
+				// onTap={() => visible(imageName)}
 				onHoverStart={() => addToTap(imageName)}
 				onHoverEnd={() => removeFromTap(imageName)}
 				onTap={() => processTap(imageName)}
